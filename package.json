@@ -1,0 +1,23 @@
+{
+  "name": "mastering-dsa",
+  "version": "1.0.0",
+  "description": "mastering DSA with JS",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Riyazsuhu/mastering-DSA.git"
+  },
+  "author": "Riyaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Riyazsuhu/mastering-DSA/issues"
+  },
+  "homepage": "https://github.com/Riyazsuhu/mastering-DSA#readme",
+  "dependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
