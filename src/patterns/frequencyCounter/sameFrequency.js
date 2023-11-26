@@ -21,5 +21,5 @@ function sameFrequency(num1, num2){
         if(!(key in counter2) || counter1[key] !== counter2[key]  ) return false
     }
     // finally return true 
-    return true
+    return true 
 }
