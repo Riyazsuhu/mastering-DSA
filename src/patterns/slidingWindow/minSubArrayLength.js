@@ -25,4 +25,4 @@ const minSubArrayLen = (arr, target) => {
     return minLen === Infinity ? 0 : minLen;
 };
 
-minSubArrayLen([3,1,7,11,2,9,8,21,62,33,19], 52);
+minSubArrayLen([3,1,7,11,2,9,8,21,62,33,19], 52); 
