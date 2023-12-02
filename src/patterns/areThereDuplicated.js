@@ -1,14 +1,3 @@
-// multiple pointers
-function areThereDuplicates() {
-    const set = new Set();
-    for (let arg of arguments) {
-        if (set.has(arg)) {
-            return true; // Duplicates found
-        }
-        set.add(arg);
-    }
-    return false; // No duplicates found
-}
 //  frequency counter algo 
 //write a function call areThereDuplicates which accept n number of variables as arguments and return true or false based on duplicated in it the input contains both number and string
 // examples areThereDuplicates(1, "e", "s", 3) false, areThereDuplicates() false, areThereDuplicates(1, 2, , 4, 2) 
