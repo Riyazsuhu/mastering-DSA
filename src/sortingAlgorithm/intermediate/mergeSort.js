@@ -1,4 +1,26 @@
-import { merge } from "../../utils.js"
+const merge = (arr, arr1) => {
+    let mergedArr = [],
+        i = 0,
+        j = 0
+    while(i < arr.length && j < arr1.length){
+        if(arr[i] < arr1[j]){
+            mergedArr.push(arr[i])
+            i++;
+        }else{
+            mergedArr.push(arr1[j])
+            j++;
+        } 
+    }
+    while(i < arr.length){
+        mergedArr.push(arr[i])
+        i++
+    }
+    while(j < arr1.length){
+        mergedArr.push(arr1[j])
+        j++
+    }
+    return mergedArr
+}
 
 function mergeSort(arr){
     if(arr.length <= 1) return arr

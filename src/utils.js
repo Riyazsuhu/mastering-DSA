@@ -4,26 +4,14 @@ export const swap = (arr, ind1, ind2) => {
     [arr[ind1], arr[ind2]] = [arr[ind2], arr[ind1]]
 }
 
-export const merge = (arr, arr1) => {
-    let mergedArr = [],
-        i = 0,
-        j = 0
-    while(i < arr.length && j < arr1.length){
-        if(arr[i] < arr1[j]){
-            mergedArr.push(arr[i])
-            i++;
-        }else{
-            mergedArr.push(arr1[j])
-            j++;
-        } 
-    }
-    while(i < arr.length){
-        mergedArr.push(arr[i])
-        i++
-    }
-    while(j < arr1.length){
-        mergedArr.push(arr1[j])
-        j++
-    }
-    return mergedArr
+export const findDigit = (num, pos) => Math.floor(Math.abs(num) / Math.pow(10, pos)) % 10
+
+export const digiCount = num => {
+    if(num === 0) return 1
+    return Math.floor(Math.log10(Math.abs(num))) + 1
+}
+
+export const mostDigits = arr => {
+    if(arr.length === 0) return 0
+    return Math.max(digiCount(arr[0]), mostDigits(arr.slice(1)))
 }
